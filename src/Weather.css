@@ -1,0 +1,48 @@
+.Weather {
+	width: 50em;
+	height: 50em;
+	border-radius: 50%;
+	background-color: rgba(15, 15, 15, 0.084);
+}
+
+.Weather form {
+	position: relative;
+	top: 3em;
+}
+
+.Weather h1 {
+	position: relative;
+	top: 2em;
+	font-size: 3em;
+}
+
+.Weather h2 {
+	position: relative;
+	top: 3em;
+	font-size: 3em;
+}
+
+.Weather h4 {
+	position: relative;
+	top: 6.5em;
+}
+
+.Weather img {
+	position: relative;
+	top: 1em;
+	height: 10em;
+}
+
+.Weather h3 {
+	position: relative;
+	left: 14em;
+	bottom: 4em;
+	font-size: 1.9em;
+}
+
+.Weather ul li {
+	position: relative;
+	left: 26em;
+	bottom: 7.5em;
+	list-style-type: none;
+}
