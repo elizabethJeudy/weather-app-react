@@ -108,6 +108,7 @@ export default function Weather() {
 				</div>
 			</div>
 			<input type="submit" value="Current location" className="btn" />
+			<p> Last updated: October 30 5:30pm</p>
 		</div>
 	);
 }
