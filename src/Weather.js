@@ -107,6 +107,7 @@ export default function Weather() {
 					</ul>
 				</div>
 			</div>
+			<input type="submit" value="Current location" className="btn" />
 		</div>
 	);
 }

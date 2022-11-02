@@ -83,3 +83,10 @@
 	bottom: 48em;
 	left: 36em;
 }
+
+.Weather .btn {
+	position: relative;
+	bottom: 45em;
+	background-color: azure;
+	border-radius: 5em;
+}
