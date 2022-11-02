@@ -1,6 +1,7 @@
 .Weather {
-	width: 50em;
-	height: 50em;
+	margin: 0 auto;
+	width: 55em;
+	height: 55em;
 	border-radius: 50%;
 	background-color: rgba(15, 15, 15, 0.084);
 }
@@ -29,7 +30,7 @@
 
 .Weather img {
 	position: relative;
-	top: 1em;
+	top: 2em;
 	height: 10em;
 }
 
@@ -45,4 +46,40 @@
 	left: 26em;
 	bottom: 7.5em;
 	list-style-type: none;
+}
+
+.Weather .forecast {
+	position: relative;
+	right: 32em;
+	top: 8em;
+}
+
+.Weather .icon {
+	position: relative;
+	height: 5em;
+	top: 0.3em;
+}
+
+.Weather .two {
+	position: relative;
+	left: 8em;
+	bottom: 12em;
+}
+
+.Weather .three {
+	position: relative;
+	bottom: 24em;
+	left: 17em;
+}
+
+.Weather .four {
+	position: relative;
+	bottom: 36em;
+	left: 26em;
+}
+
+.Weather .five {
+	position: relative;
+	bottom: 48em;
+	left: 36em;
 }
