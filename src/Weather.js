@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormatedDate from "./FormatedDate";
 
 export default function Weather(props) {
 	const [weather, setWeather] = useState({ loading: false });
@@ -9,13 +10,13 @@ export default function Weather(props) {
 		setWeather({
 			loading: true,
 			city: response.data.city,
+
 			temp: response.data.temperature.current,
 			description: response.data.condition.description,
 			feels: response.data.temperature.feels_like,
 			humidity: response.data.temperature.humidity,
 			wind: response.data.wind.speed,
-			icon: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
-			date: "Last updated: October 30 5:30pm",
+			icon: `http://shecodes-assets.s3.amazonaws.com/api/weather/icon/${response.data.condition.icon}.png`,
 		});
 	}
 
@@ -45,9 +46,83 @@ export default function Weather(props) {
 					<div className="col-6">
 						<h3>{weather.description}</h3>
 						<ul>
-							<li>Feels like: {weather.feels}ºF</li>
-							<li>Humidity: {weather.humidity}%</li>
-							<li>Wind: {weather.wind} m/ph</li>
+							<li>Feels like: {Math.round(weather.feels)}ºF</li>
+							<li>Humidity: {Math.round(weather.humidity)}%</li>
+							<li>Wind: {Math.round(weather.wind)} m/ph</li>
+						</ul>
+					</div>
+				</div>
+				<div className="row align-items-md-center">
+					<div className="col-6 forecast">
+						<ul>
+							<li>Wednesday</li>
+							<li>
+								<img
+									src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+									className="icon"
+									alt="weather description icon
+							"
+								/>
+							</li>
+							<li>90ºF</li>
+							<li>86º | 80º</li>
+							<li>Mostly cloudy</li>
+						</ul>
+						<ul className="two">
+							<li>Wednesday</li>
+							<li>
+								<img
+									src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+									className="icon"
+									alt="weather description icon
+							"
+								/>
+							</li>
+							<li>90ºF</li>
+							<li>86º | 80º</li>
+							<li>Mostly cloudy</li>
+						</ul>
+						<ul className="three">
+							<li>Wednesday</li>
+							<li>
+								<img
+									src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+									className="icon"
+									alt="weather description icon
+							"
+								/>
+							</li>
+							<li>90ºF</li>
+							<li>86º | 80º</li>
+							<li>Mostly cloudy</li>
+						</ul>
+						<ul className="four">
+							<li>Wednesday</li>
+							<li>
+								<img
+									src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+									className="icon"
+									alt="weather description icon
+							"
+								/>
+							</li>
+							<li>90ºF</li>
+							<li>86º | 80º</li>
+							<li>Mostly cloudy</li>
+						</ul>
+						<ul className="five">
+							<li>Wednesday</li>
+							<li>
+								<img
+									src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+									className="icon"
+									alt="weather description icon
+							"
+								/>
+							</li>
+							<li>90ºF</li>
+							<li>86º | 80º</li>
+							<li>Mostly cloudy</li>
 						</ul>
 					</div>
 				</div>
@@ -55,7 +130,7 @@ export default function Weather(props) {
 				<button type="button" className="btn">
 					Current location
 				</button>
-				<p> {weather.date}</p>
+				<p> Last updated: </p>
 			</div>
 		);
 	} else {

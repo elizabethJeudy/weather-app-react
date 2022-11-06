@@ -5,13 +5,14 @@ export default function App() {
 	return (
 		<div className="App">
 			<div className="container">
-				<Weather defaultCity="Miami, FL" />
+				<Weather defaultCity="Miami" />
 
 				<footer>
 					<p>
 						<a
 							href="https://github.com/elizabethJeudy/weather-app-react"
 							target="_blank"
+							rel="noreferrer"
 						>
 							Open-Sourced
 						</a>{" "}
