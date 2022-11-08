@@ -12,7 +12,8 @@ This project was bootstrapped with Create React App.
 2.input for location search
 3.current location feature
 4.input location name
-5.input location weather:
+5. converts celcius and fahrenheit temperatures
+6.input location weather:
 
 - temperature
 - description
