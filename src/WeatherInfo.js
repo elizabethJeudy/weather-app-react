@@ -24,6 +24,7 @@ export default function WeatherInfo(props) {
 					</ul>
 				</div>
 			</div>
+
 			<div className="row ">
 				<div className="col-6 forecast">
 					<ul>
