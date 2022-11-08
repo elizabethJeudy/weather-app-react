@@ -17,7 +17,7 @@ export default function Weather(props) {
 			feels: response.data.temperature.feels_like,
 			humidity: response.data.temperature.humidity,
 			wind: response.data.wind.speed,
-			icon: `http://shecodes-assets.s3.amazonaws.com/api/weather/icon/${response.data.condition.icon}.png`,
+			icon: `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
 		});
 	}
 	// search for a city

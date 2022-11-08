@@ -11,10 +11,7 @@ export default function WeatherInfo(props) {
 					<h4>ºF | ºC</h4>
 				</div>
 			</div>
-			<img
-				src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-				alt="weather description icon"
-			/>
+			<img src={props.data.icon} alt={props.data.description} />
 			<div className="row">
 				<div className="col-6">
 					<h3>{props.data.description}</h3>
