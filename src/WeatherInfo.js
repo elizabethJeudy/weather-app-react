@@ -14,7 +14,7 @@ export default function WeatherInfo(props) {
 			<img src={props.data.icon} alt={props.data.description} />
 			<div className="row">
 				<div className="col-6">
-					<h3>{props.data.description}</h3>
+					<h3 className="text-capitalize">{props.data.description}</h3>
 					<ul>
 						<li>Feels like: {Math.round(props.data.feels)}ºF</li>
 						<li>Humidity: {Math.round(props.data.humidity)}%</li>
