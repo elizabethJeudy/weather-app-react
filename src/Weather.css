@@ -31,7 +31,7 @@
 .Weather img {
 	position: relative;
 	top: .5em;
-
+	left: .5em;
 	height: 12em;
 }
 
