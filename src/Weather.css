@@ -45,14 +45,14 @@
 .Weather ul li {
 	position: relative;
 	left: 26.5em;
-	bottom: 9em;
+	bottom: 9.5em;
 	list-style-type: none;
 }
 
-.Weather .forecast {
+.Weather WeatherForecast {
 	position: relative;
-	right: 32em;
-	top: 8em;
+	bottom: 5em;
+
 }
 
 .Weather .icon {
@@ -61,38 +61,14 @@
 	top: 0.3em;
 }
 
-.Weather .two {
-	position: relative;
-	left: 8em;
-	bottom: 12em;
-}
-
-.Weather .three {
-	position: relative;
-	bottom: 24em;
-	left: 17em;
-}
-
-.Weather .four {
-	position: relative;
-	bottom: 36em;
-	left: 26em;
-}
-
-.Weather .five {
-	position: relative;
-	bottom: 48em;
-	left: 36em;
-}
-
 .Weather .btn {
 	position: relative;
-	bottom: 45em;
+	top: 15em;
 	background-color: azure;
 	border-radius: 5em;
 }
 
 .Weather p {
 	position: relative;
-	bottom: 43em;
+	top: 17em;
 }

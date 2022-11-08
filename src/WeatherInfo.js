@@ -24,14 +24,15 @@ export default function WeatherInfo(props) {
 					</ul>
 				</div>
 			</div>
-
-			<button type="button" className="btn">
-				Current location
-			</button>
-			<p>
-				{" "}
-				Last updated: <FormatedDate date={props.data.date} />
-			</p>
+			<div>
+				<button type="button" className="btn">
+					Current location
+				</button>
+				<p>
+					{" "}
+					Last updated: <FormatedDate date={props.data.date} />
+				</p>
+			</div>
 		</div>
 	);
 }
