@@ -1,5 +1,7 @@
 import React from "react";
 import "./FormatedDate";
+import FormatedDate from "./FormatedDate";
+
 import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
@@ -22,7 +24,7 @@ export default function WeatherInfo(props) {
 					</ul>
 				</div>
 			</div>
-			<div className="row align-items-md-center">
+			<div className="row ">
 				<div className="col-6 forecast">
 					<ul>
 						<li>Wednesday</li>
@@ -99,7 +101,10 @@ export default function WeatherInfo(props) {
 			<button type="button" className="btn">
 				Current location
 			</button>
-			<p> Last updated:</p>
+			<p>
+				{" "}
+				Last updated: <FormatedDate date={props.data.date} />
+			</p>
 		</div>
 	);
 }

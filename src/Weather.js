@@ -11,7 +11,7 @@ export default function Weather(props) {
 		setWeather({
 			loading: true,
 			city: response.data.city,
-			date: new Date(response.data.date),
+			date: new Date(response.data.time * 1000),
 			temp: response.data.temperature.current,
 			description: response.data.condition.description,
 			feels: response.data.temperature.feels_like,

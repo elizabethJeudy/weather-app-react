@@ -31,7 +31,6 @@
 .Weather img {
 	position: relative;
 	top: .5em;
-	left: .5em;
 	height: 12em;
 }
 
@@ -44,7 +43,7 @@
 
 .Weather ul li {
 	position: relative;
-	left: 26em;
+	left: 26.5em;
 	bottom: 9em;
 	list-style-type: none;
 }
