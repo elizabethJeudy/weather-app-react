@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
 	const [weather, setWeather] = useState({ loading: false });
@@ -50,6 +51,7 @@ export default function Weather(props) {
 					<input type="submit" value="🔎" className="search-button" />
 				</form>
 				<WeatherInfo data={weather} />
+				<WeatherForecast />
 			</div>
 		);
 	} else {

@@ -1,0 +1,9 @@
+.WeatherForecast {
+  position: relative;
+  bottom: 4em;
+  right: 4em;
+}
+
+.WeatherForecast .forecastMin {
+  opacity: .5;
+}

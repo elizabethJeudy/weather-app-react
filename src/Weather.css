@@ -49,18 +49,6 @@
 	list-style-type: none;
 }
 
-.Weather WeatherForecast {
-	position: relative;
-	bottom: 5em;
-
-}
-
-.Weather .icon {
-	position: relative;
-	height: 5em;
-	top: 0.3em;
-}
-
 .Weather .btn {
 	position: relative;
 	top: 15em;
