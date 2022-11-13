@@ -8,10 +8,11 @@ export default function Weather(props) {
 	const [weather, setWeather] = useState({ loading: false });
 	const [city, setCity] = useState(props.defaultCity);
 	function handleResponse(response) {
-		console.log(response.data);
 		setWeather({
 			loading: true,
 			city: response.data.city,
+			longitude: response.data.coordinates.longitude,
+			latitude: response.data.coordinates.latitude,
 			date: new Date(response.data.time * 1000),
 			temp: response.data.temperature.current,
 			description: response.data.condition.description,
@@ -51,7 +52,7 @@ export default function Weather(props) {
 					<input type="submit" value="🔎" className="search-button" />
 				</form>
 				<WeatherInfo data={weather} />
-				<WeatherForecast />
+				<WeatherForecast data={weather} />
 			</div>
 		);
 	} else {

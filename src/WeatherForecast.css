@@ -4,6 +4,26 @@
   right: 4em;
 }
 
+.WeatherForecast .icon {
+  position: relative;
+  bottom: 2em;
+
+}
+
+.WeatherForecast img {
+  height: 8em;
+}
+
+.WeatherForecast .forecastTemperatures {
+  position: relative;
+  bottom: 2.9em;
+}
+
 .WeatherForecast .forecastMin {
   opacity: .5;
+}
+
+.WeatherForecast .iconDescription {
+  position: relative;
+  bottom: 3em;
 }
