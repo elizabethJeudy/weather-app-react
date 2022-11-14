@@ -1,7 +1,7 @@
 .Weather {
 	margin: 0 auto;
-	width: 55em;
-	height: 55em;
+	width: 50em;
+	height: 50em;
 	border-radius: 50%;
 	background-color: rgba(15, 15, 15, 0.084);
 
@@ -51,12 +51,12 @@
 
 .Weather .btn {
 	position: relative;
-	top: 15em;
+	top: 10em;
 	background-color: azure;
 	border-radius: 5em;
 }
 
 .Weather p {
 	position: relative;
-	top: 17em;
+	top: 11em;
 }
