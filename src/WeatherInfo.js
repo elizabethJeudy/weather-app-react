@@ -24,9 +24,6 @@ export default function WeatherInfo(props) {
 				</div>
 			</div>
 			<div>
-				<button type="button" className="btn">
-					Current location
-				</button>
 				<p>
 					{" "}
 					Last updated: <FormatedDate date={props.data.date} />
