@@ -1,6 +1,7 @@
 # Weather App using React
+https://ejeudy-weather-react.netlify.app/
 
-This project was bootstrapped with Create React App.
+
 
 ## Project Description
 
